@@ -1,6 +1,6 @@
-# task1
+# Tomercon Developers - Task 1
 
-A new Flutter project.
+A Flutter Project to build the UI og Login Page and Profile Page Using Flutter.
 
 ## Getting Started
 
@@ -14,3 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+![Screenshot_1649183985](https://user-images.githubusercontent.com/63005945/161827430-2e279e26-8b52-4aeb-b0cd-d32d3b1c48c4.png)
+![Screenshot_1649183963](https://user-images.githubusercontent.com/63005945/161827434-50cde255-838d-49f7-9ac5-058b3ca4acee.png)
