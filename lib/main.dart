@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task1/Login.dart';
 import 'package:task1/Page2.dart';
+import 'package:task1/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   
   Widget build(BuildContext context) {
     
-    // return LoginPage();
-    return HomePage();
+    return MaterialApp(debugShowCheckedModeBanner: false,home: LoginPage());
+    // return Hpage();
   }
 }

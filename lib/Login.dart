@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:task1/Page2.dart';
+import 'package:task1/home.dart';
 import 'package:task1/styles.dart';
 
 class LoginPage extends StatefulWidget {
@@ -14,9 +16,7 @@ class _LoginPageState extends State<LoginPage> {
   bool _obscuretext = false;
   IconData id = Icons.visibility_off;
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         resizeToAvoidBottomInset: false,
         body: GestureDetector(
           onTap: () {
@@ -109,7 +109,12 @@ class _LoginPageState extends State<LoginPage> {
                       height: 50,
                     ),
                     FlatButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        print("dfd0");
+                        Navigator.pop(context);
+                        Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Hpage()));
+                      },
                       child: Text(
                         "LOGIN",
                         style: TextStyle(color: Colors.white),
@@ -121,11 +126,9 @@ class _LoginPageState extends State<LoginPage> {
                       height: 14,
                     ),
                     GestureDetector(
-                      onTap: (){},
+                      onTap: () {},
                       child: Text("Forgot Password?",
-                       style: TextStyle(color: Colors.white
-                      )
-                      ),
+                          style: TextStyle(color: Colors.white)),
                     ),
                     SizedBox(
                       height: 40,
@@ -134,23 +137,19 @@ class _LoginPageState extends State<LoginPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("Doesn't have an account ? | ",
-                       style: TextStyle(color: Colors.white
-                      )
-                      ),
-                      GestureDetector(
-                      onTap: (){},
-                      child: Text("Sign Up",
-                       style: TextStyle(color: Colors.blueAccent,fontSize: 17
-                      )
-                      ),
-                    ),
+                            style: TextStyle(color: Colors.white)),
+                        GestureDetector(
+                          onTap: () {},
+                          child: Text("Sign Up",
+                              style: TextStyle(
+                                  color: Colors.blueAccent, fontSize: 17)),
+                        ),
                       ],
                     )
                   ]),
             ),
           ),
         ),
-      ),
     );
   }
 }

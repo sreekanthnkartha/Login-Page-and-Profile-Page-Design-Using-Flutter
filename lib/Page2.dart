@@ -11,9 +11,7 @@ class _HomePageState extends State<HomePage> {
   @override
   String link = "";
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
 
         floatingActionButton: Align(alignment: Alignment.bottomRight,
         child: FloatingActionButton(onPressed: (){},child: Icon(Icons.add),backgroundColor: Colors.orangeAccent,)),
@@ -172,8 +170,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ]),
         ),
-      ),
-    );
+        );
   }
 
   // ignore: non_constant_identifier_names
